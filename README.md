@@ -2,9 +2,17 @@
 
 3年S2タームの課題
 
-## lesson
+## lesson1
 
 シンプレックス法
+
+## lesson2
+
+ニュートン法とか
+
+## lesson3
+
+分岐限定法
 
 ## LICENSE
 
