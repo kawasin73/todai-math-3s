@@ -18,11 +18,13 @@ def dijkstra(routeMap):
         s.append(v)
         sb.remove(v)
 
-        for i, d in enumerate(routeMap[v]):
-            if d != 0 and i in sb:
-                if distance[v] + d < distance[i]:
-                    distance[i] = distance[v] + d
-                    fromList[i] = v
+        for i in sb:
+            d = routeMap[v][i]
+            if d != 0 and distance[v] + d < distance[i]:
+                distance[i] = distance[v] + d
+                fromList[i] = v
+
+    # build result route
     cur = len(routeMap) - 1
     result = [cur + 1]
     while cur != 0:
